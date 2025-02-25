@@ -24,6 +24,7 @@ export const config = getDefaultConfig({
     optimism,   // Optimism network
     arbitrum,   // Arbitrum network
     base,       // Base network
+    sepolia,
 
     // Test networks - only enabled if NEXT_PUBLIC_ENABLE_TESTNETS is true
     ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
